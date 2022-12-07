@@ -1,0 +1,31 @@
+.body {
+  padding: 25px;
+  background-color: red;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: red;
+}
+.purple {
+  background-color: purple;
+  color: red;
+}
+.red {
+  background-color: red;
+  color:black;
+}
+.blue {
+  background-color: blue;
+  color: lightgreen;
+}
+.yellow {
+  background-color: yellow;
+  color: red;
+}
+.pink {
+  background-color: pink;
+  color:aqua
+}
