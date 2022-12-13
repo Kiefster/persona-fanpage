@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Members</title>
+    <style>
+        * {box-sizing: border-box}
+        /* Set height of body and the document to 100% */
+        body, html {
+          height: 100%;
+          margin: 0;
+          font-family: Arial;
+        }
+        /* Style tab links */
+        .tablink {
+          background-color: #555;
+          color: black;
+          float: left;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 14px 16px;
+          font-size: 17px;
+          width: 33.3333333333334%;
+        }
+        .tablink:hover {
+          background-color: #777;
+        }
+        /* Style the tab content (and add height:100% for full page content) */
+        .tabcontent {
+          color: black;
+          display: none;
+          padding: 100px 20px;
+          height: max-content;
+
+        }
+        
+        #Persona_3 {background-color: blue;}
+        #Persona_4 {background-color: yellow;}
+        #Persona_5 {background-color: red;}
+
+        table, th, td { border: 2px solid black; border-collapse: collapse;}
+        table.center { margin-left: auto; margin-right: auto;}
+        </style>
+        </head>
+        <body>
+         <center><h2>Party Character</h2></center>
+
+          <center> 
+            <a href="http://127.0.0.1:5500/index.html" class="card-link">Home</a> 
+            <a href="http://127.0.0.1:5500/arcana.html" class="card-link">Arcana</a>
+            <a href="http://127.0.0.1:5500/openings.html" class="card-link">Openings</a>
+            <a href="http://127.0.0.1:5500/basepersona.html" class="card-link">Base Personas</a>
+            <a href="http://127.0.0.1:5500/OC.html" class="card-link">OC</a> 
+          </center>
+
+        <button class="tablink" onclick="openPage('Persona_3', this, 'blue')">Persona 3</button>
+        <button class="tablink" onclick="openPage('Persona_4', this, 'yellow')">Persona 4</button>
+        <button class="tablink" onclick="openPage('Persona_5', this, 'red')" id="defaultOpen">Persona 5</button>
+        <!--how do you want the team organized? by arcana or when they joined the fight?-->
+        <div id="Persona_3" class="tabcontent">
+            <table class="center">
+              <tr>
+                <th>Character Image</th>
+                <th>Character Name</th> 
+                <th>Character Discription</th> 
+               </tr>
+                <tr>
+                    <td><img src="Image/makoto yuki.jpg" alt="Makoto Yuki" width="400" height="500"></td>
+                    <td>Makoto Yuki</td>
+                    <td>In Persona 3, the protagonist is a silent protagonist aside from technically speaking in battle in certain instances. While being a silent protagonist, he is very stoic, reserved and calm, gathered by the fact that he remains unmoved even when guns are pointed at him, as well as walking under a green sky and being surrounded by blood pools and coffins everywhere at the beginning of Persona 3</td>
+                  </tr> 
+                <tr>
+                      <td><img src="Image/kotone shiomi.png" alt="Kotone Shiomi" width="400" height="500"></td>
+                      <td>Kotone Shiomi</td>
+                      <td>Unlike the male protagonist or Megami Tensei protagonists in general, she is very bubbly, funny, upbeat and cheerful. Her dialogue choices exhibit a broad spectrum of emotions, ranging from sarcasm, joking tones, utter seriousness and otherwise depending on the player's choice. She is a sharp contrast to the male protagonist who is very reserved and concise where she, on the other hand, is not afraid to interject into conversations where her male counterpart would remain silent. In addition, she is more likely to resort to violence when provoked, especially in defense of her friends, as seen in her Hermit Social Link.</td>
+                    </tr>
+              <tr>
+                <td><img src="Image/Akihiko_portrait_in_Persona_4_Arena.webp" alt="Akihiko Sanada" width="400" height="500"></td>
+                    <td>Akihiko Sanada</td> 
+                   <td>A cool and well-respected upperclassman, Akihiko is serious and determined, as well as cracking small jokes on small occasions. Of all members of the group, he is the most prone to sarcasm, one instance being if the protagonist talks to him while he and Junpei are taking a break from studying for first semester midterms, stating that Junpei isn't studying for his exams as Mitsuru told everyone to go back to their routines. He tends to show his excitement for a big challenge, something that eventually rubs off on Junpei. He is eager to train and fight, often to a fault. Early on in the game, when he is injured due to a fight with one of the twelve full moon Shadows, he will repeatedly express interest in fighting despite being unable to. This draws criticism from Mitsuru, who views Akihiko's eagerness to fight as if he treats their work as a game. At one point, Yukari even accuses him of caring more about having a good fight than doing the right thing. However, Akihiko is a kind young man who will go out of his way to help someone, which is shown when he was willing to take any chance to save Fuuka from Tartarus despite having never met her before, even after Junpei and Yukari pointed out that she had been there for ten days (or ten hours from her perspective) and most likely couldn't have survived.</td>
+              </tr>
+                  <tr>
+                    <td><img src="Image/MitsuruP3P.webp" alt="Mitsuru Korijo" width="400" height="500"></td>
+                    <td>Mitsuru Korijo</td>
+                    <td>Mitsuru is calm, confident, mature, responsible, wise and very intelligent despite being a high school student. However, she may be interpreted as slightly arrogant, conceited, cold-hearted or overconfident. As events unfold, this may be a front of maturity, due to her assumed role as the leader of SEES. Her Persona Arcana is the Empress, which fits with the "motherly/older sisterly" role she plays in the group.</td>
+                  </tr>
+                  <tr>
+                    <td><img src="Image/P3D_Junpei_Iori.webp" alt="Junpei Iori" width="400" height="500"></td>
+                    <td>Junpei Iori</td>
+                    <td>Junpei is usually portrayed as goofy, perverted, immature and upbeat. He fancies himself a ladies' man and frequently tries to hit on girls, with little to no success. Despite this, he is capable of being kind and caring, and he often cracks jokes and calls people "dude" to make them feel better. After school, he is typically seen indulging in his hobbies of reading manga or playing video games. His bedroom in the dorm is a complete mess with stuff scattered everywhere, as shown in a command console recording when Mitsuru suspects that there had been a robbery in his room, when that is actually what his room always looks like. He is also very reckless and hot-headed and rarely thinks things through, such as when he blindly chases after a Shadow when he, Yukari and the protagonist are on the monorail during the May full moon event, leaving the latter two to fend for themselves until they catch up to him. However, Junpei does have his sensible moments as well, such as when he repeatedly warns Yukari that going to the back alley behind Port Island Station is dangerous, when she considers it an "adventure." His Arcana is the Magician, which fits with his immature personality and tendency to act before he thinks.</td>
+                  </tr>
+                  <tr>
+                    <td><img src="Image/YukariP3P.webp" alt="Yukari Takeba" width="400" height="500"></td>
+                    <td>Yukari Takeba</td>
+                    <td>Yukari's deceased father, Eiichiro Takeba, worked for the Kirijo Group while they were conducting Shadow research. He was opposed to the idea of bringing about the Fall, a stance that caused him to be killed by Mitsuru's grandfather. These events created most of the problems that SEES is forced to overcome.</td>
+                  </tr>
+                <tr>
+                    <td><img src="Image/P3D_Fuuka_Yamagishi_gekkoukan_school_uniform_with_SEES_band.webp" alt="Fuuka Yamagishi" width="400" height="500"></td>
+                    <td>Fuuka</td>
+                    <td>Initially, Fuuka is a very reserved, shy and timid girl who rarely speaks up. Before she joined S.E.E.S., this made her an easy target for school bullies, to the point of Natsuki Moriyama locking her in the school gym, which resulted in her getting trapped in Tartarus. However, she is also a friendly student once others open up to her and very kind-hearted, even more so than Yukari. She is very polite, and almost always uses honorifics when addressing people. Despite being quiet and not being involved with fighting and physical combat, she tries to help her friends in any way possible such as using her Persona's abilities to scan the statistics and weaknesses of Shadows, showing her to be very diligent and dedicated. Her Arcana is the Priestess, which fits with her ability to easily contemplate and analyze things. It also reflects her independence, which is shown by her being able to survive in Tartarus for ten hours by herself, when S.E.E.S. were barely able to last an hour in there at that point.</td>
+                  </tr>
+                <tr>
+                    <td><img src="Image/P3D_Aigis.webp" alt="Aigis" width="400" height="500"></td>
+                    <td>Aigis</td>
+                    <td>Aigis' initial personality is simply a robot designed to obey orders, although she is drawn to the protagonist and states that it is very important for her to be by his side, going so far as to hug them in front of everyone. Her desire to protect the protagonist is so strong, in fact, that she was able to overcome Ikutsuki's programming and free the entire team from their shackles, when Ikutsuki had attempted to sacrifice them to bring forth the Fall. As a result of having no emotions, Aigis' social skills are more-or-less non-existent; it's frequently noted on-screen that while she may look human, she is far from passing as such.</td>
+                  </tr>
+                <tr>
+                    <td><img src="Image/Q2_AOA_P3_Koromaru.webp" alt="Koromaru" width="400" height="500"></td>
+                    <td>Koromaru</td>
+                    <td>Koromaru is a Shiba Inu who joins the Specialized Extracurricular Execution Squad in Persona 3. Koromaru was a stray dog that Fuuka Yamagishi and Yukari Takeba played with regularly. A housewife tells them that Koromaru's master, a monk from Naganaki Shrine, had died in an accident (about 6 months ago from June 20). Koromaru continued to protect the shrine and wait for his master's return.</td>
+                  </tr>
+                  <tr>
+                      <td><img src="Image/Metis_render.webp" alt="Metis" width="400" height="500"></td>
+                      <td>Metis</td> 
+                      <td>Metis has a childlike personality, to the point of being compared to a child by Junpei, something she takes offense to. She recognizes Aigis as her "sister," and as a result tries to protect her from harm. She cares for Aigis deeply and is willing to do anything to protect her, even if it means she'll hate her for it. This is shown when she attempted to kill the other members of SEES, whom she believed (correctly) were responsible for the Abyss of Time's manifestation. She also gets angry when Akihiko suspects her of having an ulterior motive for protecting Aigis, insisting that she's doing it because she cares about her and nothing more.</td>
+                    </tr>
+                </table>
+        </div>
+        
+        <div id="Persona_4" class="tabcontent">
+          <table class="center">
+            <tr>
+              <th>Character Image</th>
+              <th>Character Name</th> 
+              <th>Character Discription</th> 
+             </tr>
+             <tr>
+               <td><img src="Image/yu narukami .jpg" alt="Yu Narukami" width="400" height="500"></td>
+               <td>Yu Narukami</td>
+               <td>In Persona 4, he is a silent protagonist, as in the series tradition. Except for instances where he audibly speaks when summoning a Persona and so on, with his personality ultimately based on the player's actions and decisions. This is emphasized in Persona 4 Golden, as the Investigation Team members comment on how he doesn't talk much when equipped with the Butler Suit. His dialogue choices make him seem very neutral and include some limited sense of humor along with occasional flirtatious or silly behavior. Overall, he is portrayed through his dialogue options and actions as having a more extrovert personality than the Persona 3 protagonist, such as when both hear Jika Net Tanaka, with the former describing it as a "cheery song" unlike the latter, who describes it as an "annoying song." However, while he seems to have a strong moral compass, there are several dialogue options that show he could be mean if he wanted it. In one case, when asked to stay and help clean the basketball court, the options given to him are either to stay or to "be an ass and leave," though indicating an inclination to the former. Additionally, while the game portrays him as a calm and decisive individual, there are scenes that show him to having limits as to how much tolerance he has. One example, in particular, is the decision to kill Namatame, as the dialogue choice "Calm the hell down!" can be shown, and when selected, it demonstrates how he hardly ever shows to be this aggressive, as the Investigation Team gets surprised by his outburst at Yosuke.</td>
+             </tr>
+            <tr>
+             <td><img src="Image/P4G-YosukeSprite.webp" alt="Yosuke Hanamura" width="400" height="500"></td>
+              <td>Yosuke Hanamura</td> 
+              <td>Yosuke is a clumsy transfer-student who arrived six months before the protagonist. He is often the target for jokes about his lack of muscles and body strength. He fights with blunt, double-handed objects such as wrenches, but more so knives and kunai. The protagonist first sees him crashing his bike into a garbage can, the first of many times, but the protagonist ignores him. The protagonist only helps him the second time this happens.</td>
+            </tr>
+              <tr>
+                <td><img src="Image/P4G-ChieSprite.webp" alt="Chie Sakanaka" width="400" height="500"></td>
+                <td>Chie Sakanaka</td>
+                <td>Chie is energetic and outgoing, the "extrovert" compared to Yukiko being the "introvert." She has a bright and upbeat personality, often trying to cheer up the group by joking about the case. She can be somewhat short tempered, especially with Yosuke, and is slow to back down from a challenge.</td>
+              </tr>
+              <tr>
+                <td><img src="Image/P4G-KanjiSprite.webp" alt="Kanji Tatsumi" width="400" height="500"></td>
+                <td>Kanji Tatsumi</td>
+                <td>Kanji seems to be a delinquent who was strong enough to fight a biker gang in middle school, earning him a town-wide reputation of wildness and toughness. He drapes his school uniform over his shoulders in a punk-ish style to emphasize the style he wishes to embody. However, when he sometimes gets flustered he tends to threaten people, occasionally getting into fights and scraps.</td>
+             </tr>
+              <tr>
+               <td><img src="Image/P4G-NaotoSprite.webp" alt="Naoto Shirogane" width="400" height="500"></td>
+                <td>Naoto Shirogane</td>
+                <td>Having lost both her parents in a car accident when she was very young, Naoto is an orphan who acts very mature in spite of her age. As a descendant of a respected lineage of famous detectives, she wears formal clothing and deepens her voice when she speaks in a sophisticated, stilted manner. She is generally very serious, focused and mission-oriented. She rarely jokes around which can make her seem like a killjoy or party pooper when the team is involved in silly antics. In Persona 4 Arena, Kanji calls her out on this, saying she is too "uptight" and it makes her seem distant and on a different wavelength.[2] This has led to a lack of friends and while she does not show it often, she desires for friendship and a sense of belonging. As she bonds further with the team, she warms up considerably. In Persona 4 Arena, she notes the surprising difficulty in trying to balance her detective work with her newfound friends. In fact, she even expresses concern that she keeps putting work before time with them, showing how much her relationships with them have become to her.</td>
+              </tr>
+             <tr>
+               <td><img src="Image/P4G-RiseSprite.webp" alt="Rise Kujikawa" width="400" height="500"></td>
+                <td>Rise Kujikawa</td>
+                <td>Rise is cheerful, outspoken, naughty, cute and is quite boastful about herself, although very sweet deep down. She is referred to as a "dangerous girl" by Chie Satonaka, due to her boldness in flirting with the protagonist, and her teasing of Yosuke Hanamura and Kanji Tatsumi. Rise is quickly annoyed by the smallest things, which ends up with her crying dramatically, and sometimes producing crocodile tears. She's rather childish and possessive; she once pouted and told the protagonist he mustn't call another girl "cute." She has also shown her competitive side on many occasions, and she’s mocked Yukiko Amagi’s insecurity and her cooking. Along with Yukiko, and Naoto Shirogane, she cries when the protagonist leaves Inaba, and she'll profess her love to him. This, combined with her Arcana being The Lovers, her flirting and certain scenes in Persona 4 The Animation show her affection for the protagonist. Rise states that she loves the protagonist, and will show a very obvious interest in him during the storyline regardless of her Social Link standing.[1] Her cooking skills like Chie and Yukiko are horrific and is prone to making overly spicy food, as shown in her Omelet that she made for Nanako to celebrate Mitsuo's arrest.</td>
+              </tr>
+              <tr>
+                <td><img src="Image/P4G-TeddieSprite.webp" alt="Teddie" width="400" height="500"></td>
+                <td>Teddie</td>
+                <td>Teddie is usually bubbly and cute and is known to lighten the mood when investigating the case, much like Chie. Possibly due to being a Shadow unfamiliar with the human world, or perhaps due to being a cartoon bear, Teddie has a lot of childish naivety, innocence and is pure of heart. He doesn't know a lot of human customs, does not know what "scoring a hot stud" means or what a "manwhore" is.[4] This results in him having a lack of social boundaries, such as when he flirts with Chie and Yukiko, although he fails every time. He's also given a lot of people nicknames for himself to remember. In the beginning of Persona 4 The Animation, he acts much like a coward when Shadows are near, but changes his ways as the story progresses.</td>
+              </tr>
+             <tr>
+                <td><img src="Image/Marie_portrait.webp" alt="Marie" width="400" height="500"></td>
+                <td>Marie</td>
+                <td>When Marie is first met, she seems to be a very cold and antisocial individual. She is sullen, cranky, sarcastic, irritable, very foul-mouthed and often prone to mood swings. She will not hesitate to voice her opinion or express her thoughts, regardless of how it would make everyone feel. The team is also weirded out when she politely apologizes, commenting that she never seemed like the type who would say sorry.</td>
+              </tr>
+            </table>
+        </div>
+        
+        <div id="Persona_5" class="tabcontent">
+          <table class="center">
+           <tr>
+            <th>Character Image</th>
+            <th>Character Name</th> 
+            <th>Character Description</th> 
+           </tr> 
+            <tr>
+              <td><img src="Image/Ren Amamiya pfp.png" alt="Ren Amamiya" width="400" height="500"></td>
+              <td>Ren Amamiya</td> 
+              <td>As per tradition of the Megami Tensei franchise, he is a silent protagonist, whose personality is based on the player's actions and decisions. However, he appears to have more established traits than any of the previous protagonists. His dialogue options range from somewhat indifferent to outright cheeky. The game allows for quite a number of playful, snarky or audacious answers, including teasing his friends. He also taunts his enemies like the famed Arsène Lupin. In the prologue scene, he remains cocky and confident even when his life is in danger. He also has a flair for showing off and making dramatic decisions, such as exiting by jumping through the stained glass windows of the Casino, much to the amazement (and mild annoyance) of the other Phantom Thieves. This is even reflected in gameplay, as when he is turned into a mouse, he makes a flamboyant hop after escaping a battle.</td> 
+            </tr>
+              <tr>
+                <td><img src="Image/Ryuji_theme2.webp" alt="Ryuji Sakamoto" width="400" height="500"></td>
+                <td>Ryuji Sakamoto</td>
+                <td>Ryuji is known as a disruptive "problem student" at school whose bad behavior causes all sorts of trouble for the teachers. He is quite proud of his status as a self-proclaimed "troublemaker" and his rebellious, mischievous and disobedient nature are the perfect qualities to be a Phantom Thief. He is sometimes vulgar and aggressive, as shown in his early interactions with the protagonist, Yusuke Kitagawa and Makoto Niijima. He is also rather short-tempered, easily taking offense from even the slightest of comments. That said, he will never resort to violence without being legitimately provoked.</td>
+              </tr>
+              <tr>
+               <td><img src="Image/Ann Takamaki pfp.png" alt="Ann Takamaki" width="400" height="500"></td>
+                <td>Ann Takamaki</td>
+                <td>Ann is a very kind and compassionate girl, enough for it to be noted by both Morgana and Sojiro Sakura. Years of isolation due to her looks have left her very withdrawn, with the belief that she's lost her place in the world, but this hasn't stopped her from opening up to the people close to her and have fun. She's able to press on without caring about the opinions of others due to her friendship with Shiho Suzui, who was her first real friend in Japan before joining the Phantom Thieves. She is shown to be a good judge of character, as she was the first person able to look past the rumors of the protagonist and see him for who he really is. Her good judgement of others is also shown by her willingness to forgive Makoto after learning her side of the story in the incident with Suguru Kamoshida, namely that she wanted to do something but felt powerless to stop him, having realized it wasn't too different from her own situation. Before this, she also comforts Makoto when she calls herself "scum of the Earth" due to her failure to help Kamoshida's victims, saying that if she really was scum, she wouldn't call herself such.</td>
+              </tr>
+              <tr>
+               <td><img src="Image/Morgana_theme2.webp" alt="Morgana" width="400" height="500"></td>
+                <td>Morgana</td>
+                <td>While appearing to be a cat-like creature, Morgana emphatically insists to have been human and that he has been turned into a cat. Despite this, sometimes he instinctively meows and self-grooms, being able to get used to his lifestyle as a cat easily. He's self-aware with his form, and may even make many cat jokes and references. Morgana doesn't remember who he was or where he was born, which is the foundation of an identity crisis, as he's often confused and uncertain about who he really is. This also makes him not absolutely sure as to why he thinks he's been human, and hence dislikes people skipping any uncertainties and saying he's going to turn out have just been a stray cat. However, Morgana is cognitively human and acts like it, and it's merely his origins that confuses him about who he is.</td>
+              </tr>
+              <tr>
+               <td><img src="Image/Yusuke_theme_2.webp" alt="Yusuke Kitagawa" width="400" height="500"></td>
+                <td>Yusuke Kitagawa</td>
+                <td>Yusuke is an honor student who takes an art course at Kosei High School. He was raised by Madarame as his mother died when he was three. Therefore, he does not remember her and Madarame took great care of him. As he grew up, he was tutored in art by Madarame, with his masterpiece "Sayuri" being one of his greatest inspirations for his artistic career. In reality, Madarame only raised Yusuke for the sole purpose of exhibiting his artwork using his name, and he would often give him meager rations during his tutelage. By the time the game begins, most other pupils in Madarame's shack are cast away, died because of direct or indirect abuse by him, left due to losing interest in art, and Yusuke is the last pupil living in his atelier. While he appears to be aggressively defensive to Madarame, before the events of the game, Natsuhiko Nakanohara asked him about how Madarame treated him, and he admitted that he would leave his shack if he could.</td>
+              </tr>
+            <tr>
+               <td><img src="Image/AFK_Arena_Queen_render.webp" alt="Makoto Niijima" width="400" height="500"></td>
+                <td>Makoto Niijima</td>
+                <td>Despite her position as student council president, Makoto is an extremely unpopular student at Shujin Academy. This is due to her not doing anything to stop Suguru Kamoshida's abuse, resulting in all the students labeling her as an arrogant, selfish control freak who knew about the abuse but chose to ignore it because she only cared about getting a good letter of recommendation. While she does give off the impression of this during the Phantom Thieves' first few encounters with her, these rumors are ultimately revealed to be completely untrue. In actuality, the abuse outraged Makoto, but she felt powerless to do anything about it due to the influence Kamoshida held over the school. In fact, Makoto holds no real authority at Shujin, with her position merely making her a glorified tool for the principal to use however he sees fit.</td>
+              </tr>
+            <tr>
+               <td><img src="Image/FutabaStarOcean.webp" alt="Futaba Sakura" width="400" height="500"></td>
+                <td>Futaba Sakura</td>
+                <td>Futaba is the daughter of cognitive psientist Wakaba Isshiki; her father is unknown. Due to her high intelligence compared to other children around her, she was bullied often and barely had any friends other than a girl named Kana. However, Kana's parents were sexually harassing their daughter, and when Futaba discovered this, Kana left her as well.
+
+              At some point, Futaba, under the codename "Medjed," began acting as a "hacker of justice," becoming well known. However, because she stayed anonymous, other hackers began using the name all over the world, eventually forming their own hacktivist group. Futaba saw that the group was getting out of hand, but found it too much trouble to expose its members. Instead, she simply changed her handle to "Alibaba" and stepped away from hacktivism. During the events of the game, the moniker that Futaba used was impersonated by an IT Company president to launch blank threats against the Phantom Thieves.</td>
+              </tr>
+            <tr>
+               <td><img src="Image/haru okumura.png" alt="Haru Okumura" width="400" height="500"></td>
+                <td>Haru Okumura</td>
+                <td>Haru is a third year student in Shujin Academy and the daughter of the current president of Okumura Foods, Kunikazu Okumura. While Okumura used to genuinely care for his daughter, by the time the events of the game began, he had grown so corrupt and over-ambitious that he is willing to do anything he can do to gain absolute power. She didn't mind at first despite Okumura was overworking employees, but she eventually became a bargaining chip for his ambitions, in which she has been forced into an arranged marriage with the son of a prospective associate of her father's, Sugimura for the sole reason that his status will allow Okumura to achieve presidency. While arranged marriages are not uncommon in Japan, Sugimura himself is a highly abusive, abrasive and controlling playboy who sees no issue with polygamy, effectively putting Haru's well-being at stake. During the Rank 10 Confidant hangout with her, it was also revealed that Okumura fabricated the marriage contract privately with several loyal board members and some executives within the company had never even heard about it.</td>
+              </tr>
+            <tr>
+               <td><img src="Image/goro akechi crowe.png" alt="Goro Akechi" width="400" height="500"></td>
+                <td>Goro Akechi</td>
+                <td>Akechi is the illegitimate child of Masayoshi Shido, the same man responsible for the protagonist's probation period. His mother was a sex worker who was shamed for having a child out of wedlock and committed suicide. According to him, before her suicide, she raised him alone, and whenever she brought men from the red light district into their home, she would tell him to go to the bath house. Akechi desired to make Shido apologize for his crime of making her illegally conceive a child, but was powerless to do anything because Shido was already a high-ranking official by then. After his mother's death, he was then passed around child institutions as an orphan.</td>
+              </tr>
+            <tr>
+            <td><img src="Image/kasumi yoshizawa.jpg" alt="Kasumi Yoshizawa" width="400" height="500"></td>
+                <td>Kasumi Yoshizawa</td>
+                <td>Yoshizawa is a cheerful, elegant and friendly person with a seemingly perfect life, as she received a Shujin scholarship and was (supposedly) nearly uncontested in gymnastic competitions. She also appears to be quite clumsy and careless, as she is shown outright missing the mark at the batting cages even if her reflexes are usually excellent, and she lets her phone's battery run out while texting the protagonist. Despite the fact that she can cook, she is unpredictable and somewhat awkward at it, since she isn't sure about the ingredients, and she often uses stamina replenishing food due to her gymnast tendencies. She has high metabolism, and as such can put away a large amount of food and still ask for seconds. She always refers to her fellow friends as "Senpai" no matter the situation, since she's the youngest member of the Phantom Thieves who has an educative degree.</td>
+              </tr>
+            </table>
+        </div>
+        
+        
+        <script>
+        function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+        </body>
+</html>

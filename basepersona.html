@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {box-sizing: border-box}
+        /* Set height of body and the document to 100% */
+        body, html {
+          height: 100%;
+          margin: 0;
+          font-family: Arial;
+        }
+        /* Style tab links */
+        .tablink {
+          background-color: #555;
+          color: black;
+          float: left;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 14px 16px;
+          font-size: 17px;
+          width: 33.3333333333334%;
+        }
+        .tablink:hover {
+          background-color: #777;
+        }
+        /* Style the tab content (and add height:100% for full page content) */
+        .tabcontent {
+          color: black;
+          display: none;
+          padding: 100px 20px;
+          height: max-content;
+
+        }
+        
+        #Persona_3 {background-color: blue;}
+        #Persona_4 {background-color: yellow;}
+        #Persona_5 {background-color: red;}
+
+        table, th, td { border: 2px solid black; border-collapse: collapse;}
+        table.center { margin-left: auto; margin-right: auto;}
+        </style>
+        </head>
+        <body>
+         <center><h2>Base Persona</h2></center>
+         <center> 
+         <a href="http://127.0.0.1:5500/index.html" class="card-link">Home</a>
+         <a href="http://127.0.0.1:5500/arcana.html" class="card-link">Arcana</a>
+         <a href="http://127.0.0.1:5500/party.html" class="card-link">Party Members</a>
+         <a href="http://127.0.0.1:5500/openings.html" class="card-link">Openings</a>
+         <a href="http://127.0.0.1:5500/OC.html" class="card-link">OC</a> </center>
+        <button class="tablink" onclick="openPage('Persona_3', this, 'blue')">Persona 3</button>
+        <button class="tablink" onclick="openPage('Persona_4', this, 'yellow')">Persona 4</button>
+        <button class="tablink" onclick="openPage('Persona_5', this, 'red')" id="defaultOpen">Persona 5</button>
+        <!--how do you want the team organized? by arcana or when they joined the fight?-->
+        <div id="Persona_3" class="tabcontent">
+            <table class="center">
+              <tr>
+                <th>Persona Image</th>
+                <th>Persona Name</th> 
+               </tr>
+                <tr>
+                    <td><img src="Image/Orpheus_fullsize.webp" alt="Orpheus" width="400" height="500"></td>
+                    <td>Orpheus</td>
+                  </tr> 
+                <tr>
+                      <td><img src="Image/Orpheus_female_render_by_misachanchibi-d347r8n.webp" alt="Orpheus Female" width="400" height="500"></td>
+                      <td>Orpheus Female</td>
+                    </tr>
+              <tr>
+                <td><img src="Image/Polydeuces.webp" alt="Polydeuces" width="400" height="500"></td>
+                    <td>Polydeuces</td> 
+              </tr>
+                  <tr>
+                    <td><img src="Image/Penthesilea.webp" alt="Penthesilea" width="400" height="500"></td>
+                    <td>Penthesilea</td>
+                  </tr>
+                  <tr>
+                    <td><img src="Image/P3-Hermes.webp" alt="Hermes" width="400" height="500"></td>
+                    <td>Hermes</td>
+                  </tr>
+                  <tr>
+                    <td><img src="Image/Io.webp" alt="Io " width="400" height="500"></td>
+                    <td>Io </td>
+                  </tr>
+                <tr>
+                    <td><img src="Image/Lucia.webp" alt="Lucia" width="400" height="500"></td>
+                    <td>Lucia</td>
+                  </tr>
+                <tr>
+                    <td><img src="Image/Palladion.webp" alt="Palladion" width="400" height="500"></td>
+                    <td>Palladion</td>
+                  </tr>
+                <tr>
+                    <td><img src="Image/1-Cerberus.png" alt="Cerberus" width="400" height="500"></td>
+                    <td>Koromaru</td>
+                  </tr>
+                  <tr>
+                </table>
+        </div>
+        
+        <div id="Persona_4" class="tabcontent">
+          <table class="center">
+            <tr>
+                <th>Persona Image</th>
+                <th>Persona Name</th> 
+             </tr>
+             <tr>
+               <td><img src="Image/P4-Izanagi.webp" alt="Izanagi" width="400" height="500"></td>
+               <td>Izanagi</td>
+             </tr>
+            <tr>
+             <td><img src="Image/P4-persona-jiraiya.webp" alt="Jiraiya" width="400" height="500"></td>
+              <td>Jiraiya</td> 
+            </tr>
+              <tr>
+                <td><img src="Image/P4-TomoeGozen.webp" alt="Tomoe" width="400" height="500"></td>
+                <td>Tomoe</td>
+              </tr>
+              <tr>
+                <td><img src="Image/P4-persona-take-mikazuchi.webp" alt="Take-Mikazuchi" width="400" height="500"></td>
+                <td>Take-Mikazuchi</td>
+             </tr>
+              <tr>
+               <td><img src="Image/P4-persona-sukuna-hikona.webp" alt="Sukuna-Hikona" width="400" height="500"></td>
+                <td>Sukuna-Hikona</td>
+              </tr>
+             <tr>
+               <td><img src="Image/P4-Himiko.webp" alt="Himiko" width="400" height="500"></td>
+                <td>Himiko</td>
+              </tr>
+              <tr>
+                <td><img src="Image/P4-KintoukiDouji.webp" alt="Kintoki-Douji" width="400" height="500"></td>
+                <td>Kintoki-Douji</td>
+              </tr>
+             <tr>
+                <td><img src="Image/P4AU_Kaguya.webp" alt="Kaguya" width="400" height="500"></td>
+                <td>Kaguya</td> 
+              </tr>
+            </table>
+        </div>
+        
+        <div id="Persona_5" class="tabcontent">
+          <table class="center">
+           <tr>
+            <th>Persona Image</th>
+            <th>Persona Name</th> 
+           </tr> 
+            <tr> 
+              <td><img src="Image/Arsene.webp" alt="Arsene" width="400" height="500"></td>
+              <td>Arsene</td> 
+            </tr>
+              <tr>
+                <td><img src="Image/captain kidd.webp" alt="Captain Kidd" width="400" height="500"></td>
+                <td>Captian Kidd</td>
+              </tr>
+              <tr>
+               <td><img src="Image/carmen.webp" alt="Carmen" width="400" height="500"></td>
+                <td>Carmen</td>
+              </tr>
+              <tr>
+               <td><img src="Image/Zoro.webp" alt="Zorro" width="400" height="500"></td>
+                <td>Zorro</td>
+              </tr>
+              <tr>
+               <td><img src="Image/P5-Goemon.webp" alt="Goemon" width="400" height="500"></td>
+                <td>Goemon</td>
+              </tr>
+            <tr>
+               <td><img src="Image/P5_Johanna.webp" alt="Johanna" width="400" height="500"></td>
+                <td>Johanna</td>
+              </tr>
+            <tr>
+               <td><img src="Image/P5_Necronomicon.webp" alt="Necronomicon" width="400" height="500"></td>
+                <td>Necronomicon</td>
+              </tr>
+            <tr>
+               <td><img src="Image/P5milady.webp" alt="Milady" width="400" height="500"></td>
+                <td>Milady</td>
+              </tr>
+            <tr>
+               <td><img src="Image/Robin_Hood_P5R.webp" alt="Robin Hood" width="400" height="500"></td>
+                <td>Robin Hood</td>
+              </tr>
+            <tr>
+            <td><img src="Image/P5RCendrillon.webp" alt="Cendrillon" width="400" height="500"></td>
+                <td>Cendrillon</td>
+              </tr>
+            </table>
+        </div>
+        
+        
+        <script>
+        function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+</body>
+</html>
